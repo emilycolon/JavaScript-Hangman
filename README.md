@@ -20,3 +20,4 @@ Use bootstrap to make it look pretty? (Silver)
 1st step: created pages
 2nd step: wireframed the html
 3rd step: entered basic html and instructions
+4th step: started working on JS code and css

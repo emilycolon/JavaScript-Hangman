@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1>Hangman</h1>
-        <div class="instructions">
+        <div class="instructions" id="instructions">
             <!-- HIDE THIS DIV AFTER WORD SUBMITTED (link to unhide on bottom of page) -->
             <p>Get ready to play some Hangman! Player One will pick a word that Player Two will try to guess letter by letter.
                 Every wrong letter guessed will result in a "piece" of the hanged man to be added to the gallows. Try to
@@ -28,20 +28,22 @@
                 the man is hanged.</p>
         </div>
     </header>
-    <div class="gallows">
+    <main>
+        <div class="gallows">
 
-    </div>
-    <div class="word">
-        <!--HIDE THIS DIV AFTER WORD SUBMITTED -->
-        <input type="text" placeholder="Input a word">
-        <button>SUBMIT</button>
-    </div>
-    <div class="letters">
-        <!-- HIDE THIS DIV UNTIL WORD IS SUBMITTED -->
-        <input type="text" placeholder="Input a letter">
-        <button>SUBMIT</button>
-        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-    </div>
+        </div>
+        <div class="player-one">
+            <!--HIDE THIS DIV AFTER WORD SUBMITTED -->
+            <input type="text" class="word" placeholder="Input a word">
+            <button class="button button-submit button-player-one">SUBMIT</button>
+        </div>
+        <div class="player-two">
+            <!-- HIDE THIS DIV UNTIL WORD IS SUBMITTED -->
+            <input type="text" class="guess" placeholder="Input a letter">
+            <button class="button button-submit button-player-two">SUBMIT</button>
+            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+        </div>
+    </main>
     <aside>
         <div class="score">
             <!-- GAMES WON -->
@@ -50,8 +52,16 @@
         </div>
     </aside>
     <footer>
-        <nav>Instructions | Reset Scores</nav>
+        <ul>
+            <li>
+                <a href="#instructions" class="link instructions-link">Instructions</a>
+            </li>
+            <li>
+                <a href="#reset" class="link reset-link">Reset Scores</a>
+            </li>
+        </ul>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 

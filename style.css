@@ -1,0 +1,58 @@
+body {
+    color: black;
+}
+
+header {
+    color: black;
+}
+
+h1 {
+    color: black;
+}
+
+.instructions {
+    display: block;
+}
+
+p {
+    color: black;
+}
+
+main {
+    color: black;
+}
+
+.player-one {
+    color: black;
+    text-align: center;
+}
+
+.player-two {
+    display: none;
+    text-align: center;
+}
+
+aside {
+    color: black;
+}
+
+footer {
+    text-align: center;
+}
+
+ul {
+    /* display: inline; */
+}
+
+li {
+    display: inline;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
