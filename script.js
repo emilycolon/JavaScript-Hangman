@@ -1,12 +1,23 @@
 console.log('JS up and running');
 let wordArray = [];
 let guess = '';
+let guessedLetters = [];
 
-function checkLetter() {
-  // cross off input from letter list
-  // IF no match, add input to wrong guess array
-  // SHOW part of hanged man
-  // IF match, show matched part of wordArray
+function pushGuess() {
+  // push guess to guessedLetters and display
+  guessedLetters.push(guess);
+  $('.guessed').text(guessedLetters);
+}
+
+function checkGuess() {
+  wordArray.forEach(guess => {
+    if (guess === wordArray[i]) {
+      // IF match, show matched part of wordArray
+    } else {
+      // IF no match, SHOW part of hanged man
+      
+    }
+  });
 }
 
 $(document).ready(function() {
@@ -26,7 +37,8 @@ $(document).ready(function() {
     let guessInput = $('.guess').val();
     guess = guessInput;
     // check input against wordArray
-    checkLetter();
+    pushGuess();
+    checkGuess();
   });
 
   $('.instructions-link').on('click', function(evt) {

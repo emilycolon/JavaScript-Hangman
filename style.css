@@ -22,6 +22,38 @@ main {
     color: black;
 }
 
+.man {
+    color: black;
+}
+
+#head {
+    display: none;
+}
+
+#body {
+    display: none;
+}
+
+#left-arm {
+    display: none;
+}
+
+#right-arm {
+    display: none;
+}
+
+#left-leg {
+    display: none;
+}
+
+#right-leg {
+    display: none;
+}
+
+.word-cells {
+    color: black;
+}
+
 .player-one {
     color: black;
     text-align: center;

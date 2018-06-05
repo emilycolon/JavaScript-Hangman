@@ -24,3 +24,5 @@ Use bootstrap to make it look pretty? (Silver)
 5th step: updated layout on index.html, reworded instructions
 6th step: added JS to capture entered word
 7th step: added JS to capture entered letter
+8th step: added JS to push entered letter to guessed letters
+9th step: created divs for the parts of the man - started code to check for correct/incorrect guesses
