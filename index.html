@@ -14,18 +14,16 @@
         <h1>Hangman</h1>
         <div class="instructions" id="instructions">
             <!-- HIDE THIS DIV AFTER WORD SUBMITTED (link to unhide on bottom of page) -->
-            <p>Get ready to play some Hangman! Player One will pick a word that Player Two will try to guess letter by letter.
-                Every wrong letter guessed will result in a "piece" of the hanged man to be added to the gallows. Try to
-                guess the word before he swings!
-            </p>
-            <p>Player One: Enter a word in the text box and click the Submit button.</p>
-            <p>Remember: You can only choose a single word that does not include punctuation. You will win the game if Player
-                Two is unable to guess the word before the man is hanged.</p>
-            <p>Player Two: Enter a letter into the text box and click the submit button in order to try to guess the word.</p>
-            <p>Remember: You can only guess one letter at a time. Wrong guesses will result in more of the hanged man to be
-                added to the gallows. Correct guesses will reveal more of the submitted word. Don't worry, you won't be penalized
-                if you choose the same letter more than once! You will win the game if you are able to guess the word before
-                the man is hanged.</p>
+            <h3>Get ready to play some Hangman!</h3>
+            <h4>Player One will pick a word that Player Two will try to guess letter by letter. Every wrong letter guessed will
+                result in a "piece" of the hanged man to be added to the gallows. Try to guess the word before he swings!
+            </h4>
+            <h4>Player One: You can only choose a single word that does not include punctuation. You will win the game if Player
+                Two is unable to guess the word before the man is hanged.</h4>
+            <h4>Player Two: Try to guess the word one letter at a time. Wrong guesses will result in more of the hanged man to
+                be added to the gallows. Correct guesses will reveal more of the submitted word. Don't worry, you won't be
+                penalized if you choose the same letter more than once! You will win the game if you are able to guess the
+                word before the man is hanged.</h4>
         </div>
     </header>
     <main>
@@ -33,12 +31,12 @@
 
         </div>
         <div class="player-one">
-            <!--HIDE THIS DIV AFTER WORD SUBMITTED -->
+            <h4>Player One: Enter a word in the text box below and click the Submit button.</h4>
             <input type="text" class="word" placeholder="Input a word">
             <button class="button button-submit button-player-one">SUBMIT</button>
         </div>
         <div class="player-two">
-            <!-- HIDE THIS DIV UNTIL WORD IS SUBMITTED -->
+            <h4>Player Two: Enter a letter into the text box below and click the submit button in order to try to guess the word.</h4>
             <input type="text" class="guess" placeholder="Input a letter">
             <button class="button button-submit button-player-two">SUBMIT</button>
             <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
