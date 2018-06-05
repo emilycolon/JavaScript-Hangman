@@ -5,14 +5,15 @@ let guessedLetters = [];
 
 function makeWordCells() {
   for (var x = 0; x < wordArray.length; x++) {
-    $('.word-cells').append(
+    $('.word-cells-main').append(
       '<div class="word-letter ' + [x] + '">' + wordArray[x] + '</div>'
     );
+    $('.word-cells-secondary').append('<div class="word-underline"></div>');
+    $('.word-letter').css('display', 'none');
   }
 }
 
 function pushGuess() {
-  // push guess to guessedLetters and display
   guessedLetters.push(guess);
   $('.guessed').text(guessedLetters);
 }
@@ -29,11 +30,9 @@ function checkGuess() {
 
 $(document).ready(function() {
   $('.button-player-one').on('click', function(evt) {
-    // changes to display (hide/show)
     $('.instructions').css('display', 'none');
     $('.player-one').css('display', 'none');
     $('.player-two').css('display', 'block');
-    // capture input and add to array
     let word = $('.word')
       .val()
       .toUpperCase();
@@ -42,7 +41,6 @@ $(document).ready(function() {
   });
 
   $('.button-player-two').on('click', function(evt) {
-    // capture letter input
     let guessInput = $('.guess')
       .val()
       .toUpperCase();

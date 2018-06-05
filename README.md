@@ -28,3 +28,4 @@ Use bootstrap to make it look pretty? (Silver)
 9th step: created divs for the parts of the man - started code to check for correct/incorrect guesses
 10th step: created function to create a div for each char of the word
 11th step: added styling to create "underlines" on each letter of the word
+12th step: updated script to add two sets of divs so can hide ones with word

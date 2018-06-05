@@ -55,7 +55,14 @@ main {
     width: 15px;
     text-align: center;
     display: inline-block;
-    border-bottom: 2px solid black;
+    margin: 0px 5px;
+}
+
+.word-underline {
+    width: 15px;
+    text-align: center;
+    display: inline-block;
+    border-top: 2px solid black;
     margin: 0px 5px;
 }
 
