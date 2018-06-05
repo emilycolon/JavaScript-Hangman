@@ -12,7 +12,20 @@ h1 {
 }
 
 .instructions {
-    display: block;
+    display: none;
+}
+
+li {
+    display: inline;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 p {
@@ -63,21 +76,4 @@ aside {
 
 footer {
     text-align: center;
-}
-
-ul {
-    /* display: inline; */
-}
-
-li {
-    display: inline;
-    margin: 0 auto;
-    padding: 5px 10px;
-    border: 2px solid black;
-    border-radius: 15px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }

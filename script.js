@@ -25,14 +25,12 @@ function checkGuess() {
         .eq(order)
         .css('visibility', 'visible');
     } else {
-      
     }
   }
 }
 
 $(document).ready(function() {
   $('.button-player-one').on('click', function(evt) {
-    $('.instructions').css('display', 'none');
     $('.player-one').css('display', 'none');
     $('.player-two').css('display', 'block');
     let word = $('.word')

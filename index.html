@@ -12,19 +12,22 @@
 <body>
     <header>
         <h1>Hangman</h1>
-        <div class="instructions" id="instructions">
-            <!-- HIDE THIS DIV AFTER WORD SUBMITTED (link to unhide on bottom of page) -->
-            <h3>Get ready to play some Hangman!</h3>
-            <h4>Player One will pick a word that Player Two will try to guess letter by letter. Every wrong letter guessed will
-                result in a "piece" of the hanged man to be added to the gallows. Try to guess the word before he swings!
-            </h4>
-            <h4>Player One: You can only choose a single word that does not include punctuation. You will win the game if Player
-                Two is unable to guess the word before the man is hanged.</h4>
-            <h4>Player Two: Try to guess the word one letter at a time. Wrong guesses will result in more of the hanged man to
-                be added to the gallows. Correct guesses will reveal more of the submitted word. Don't worry, you won't be
-                penalized if you choose the same letter more than once! You will win the game if you are able to guess the
-                word before the man is hanged.</h4>
-        </div>
+        <!-- HIDE THIS DIV AFTER WORD SUBMITTED (link to unhide on bottom of page) -->
+        <h3>Get ready to play some Hangman!</h3>
+        <ul>
+            <li>
+                <a href="#" class="link instructions-link">Instructions</a>
+            </li>
+        </ul>
+        <h4 class="instructions">Player One will pick a word that Player Two will try to guess letter by letter. Every wrong letter guessed will result
+            in a "piece" of the hanged man to be added to the gallows. Try to guess the word before he swings!
+        </h4>
+        <h4 class="instructions">Player One: You can only choose a single word that does not include punctuation. You will win the game if Player
+            Two is unable to guess the word before the man is hanged.</h4>
+        <h4 class="instructions">Player Two: Try to guess the word one letter at a time. Wrong guesses will result in more of the hanged man to be
+            added to the gallows. Correct guesses will reveal more of the submitted word. Don't worry, you won't be penalized
+            if you choose the same letter more than once! You will win the game if you are able to guess the word before
+            the man is hanged.</h4>
     </header>
     <main>
         <div class="gallows">
@@ -58,14 +61,7 @@
         </div>
     </aside>
     <footer>
-        <ul>
-            <li>
-                <a href="#instructions" class="link instructions-link">Instructions</a>
-            </li>
-            <li>
-                <a href="#reset" class="link reset-link">Reset Scores</a>
-            </li>
-        </ul>
+
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
