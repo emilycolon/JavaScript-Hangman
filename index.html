@@ -10,18 +10,48 @@
 </head>
 
 <body>
-    <h1>Hangman</h1>
-    <!-- Instructions -->
-    Player One will choose a word. Player Two will then attempt to guess the word.
+    <header>
+        <h1>Hangman</h1>
+        <div class="instructions">
+            <!-- HIDE THIS DIV AFTER WORD SUBMITTED (link to unhide on bottom of page) -->
+            <p>Get ready to play some Hangman! Player One will pick a word that Player Two will try to guess letter by letter.
+                Every wrong letter guessed will result in a "piece" of the hanged man to be added to the gallows. Try to
+                guess the word before he swings!
+            </p>
+            <p>Player One: Enter a word in the text box and click the Submit button.</p>
+            <p>Remember: You can only choose a single word that does not include punctuation. You will win the game if Player
+                Two is unable to guess the word before the man is hanged.</p>
+            <p>Player Two: Enter a letter into the text box and click the submit button in order to try to guess the word.</p>
+            <p>Remember: You can only guess one letter at a time. Wrong guesses will result in more of the hanged man to be
+                added to the gallows. Correct guesses will reveal more of the submitted word. Don't worry, you won't be penalized
+                if you choose the same letter more than once! You will win the game if you are able to guess the word before
+                the man is hanged.</p>
+        </div>
+    </header>
+    <div class="gallows">
 
-    <!-- Picture which will be the hangman -->
-
-    <!-- Prompt for Player One to enter a word in a Text Input with Submit Button -->
-    <!-- Once submitted, remove this and replace with gray squares that will be equal to the # of letters in the word -->
-    <!-- MVP: have an input field THAT ONLY ACCEPTS ONE LETTER and a Submit Button -->
-    <!-- Silver: same as above have all of the alphabet represented below the input and cross them out as they are "used" -->
-    <!-- Gold: same as above but remove text input and make letters clickable buttons -->
-
+    </div>
+    <div class="word">
+        <!--HIDE THIS DIV AFTER WORD SUBMITTED -->
+        <input type="text" placeholder="Input a word">
+        <button>SUBMIT</button>
+    </div>
+    <div class="letters">
+        <!-- HIDE THIS DIV UNTIL WORD IS SUBMITTED -->
+        <input type="text" placeholder="Input a letter">
+        <button>SUBMIT</button>
+        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+    </div>
+    <aside>
+        <div class="score">
+            <!-- GAMES WON -->
+            <!-- P1 | P2 -->
+            <!-- 0 | 0 -->
+        </div>
+    </aside>
+    <footer>
+        <nav>Instructions | Reset Scores</nav>
+    </footer>
     <script src="script.js"></script>
 </body>
 

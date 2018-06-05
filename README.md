@@ -16,3 +16,7 @@ Silver: same as above have all of the alphabet represented below the input and c
 Gold: same as above but remove text input and make letters clickable buttons
 
 Use bootstrap to make it look pretty? (Silver)
+
+1st step: created pages
+2nd step: wireframed the html
+3rd step: entered basic html and instructions
