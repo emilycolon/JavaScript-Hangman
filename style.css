@@ -23,39 +23,19 @@ main {
     color: black;
 }
 
-.man {
+.hangman {
     color: black;
 }
 
-#head {
-    display: none;
-}
-
-#body {
-    display: none;
-}
-
-#left-arm {
-    display: none;
-}
-
-#right-arm {
-    display: none;
-}
-
-#left-leg {
-    display: none;
-}
-
-#right-leg {
-    display: none;
+.man {
+    color: black;
 }
 
 .word-letter {
     width: 15px;
     text-align: center;
     display: inline-block;
-    visibility: visible;
+    visibility: hidden;
     margin: 0px 5px;
 }
 

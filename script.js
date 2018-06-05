@@ -9,7 +9,6 @@ function makeWordCells() {
       '<div class="word-letter ' + [x] + '">' + wordArray[x] + '</div>'
     );
     $('.word-cells-secondary').append('<div class="word-underline"></div>');
-    $('.word-letter').css('visibility', 'hidden');
   }
 }
 
@@ -20,14 +19,13 @@ function pushGuess() {
 
 function checkGuess() {
   for (var i = 0; i < wordArray.length; i++) {
-    if (guess === wordArray[i]) {
-      console.log(guess);
+    let order = $.inArray(guess, wordArray);
+    if (order >= 0) {
       $('.word-letter')
-        .eq([i])
+        .eq(order)
         .css('visibility', 'visible');
-      return;
     } else {
-      $('.man div:first-child').css('display', 'inline-block');
+      
     }
   }
 }
