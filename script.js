@@ -69,6 +69,7 @@ $(document).ready(function() {
     guess = guessInput;
     pushGuess();
     checkGuess();
+    $('.guess').val('');
   });
 
   $('.instructions-link').on('click', function(evt) {

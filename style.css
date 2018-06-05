@@ -1,18 +1,18 @@
 body {
     margin: 0 auto;
     text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    background: white;
 }
 
 header {
-    color: black;
-}
-
-h1 {
-    color: black;
+    margin-bottom: 20px;
 }
 
 .instructions {
     display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
 
 li {
@@ -25,23 +25,6 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
-}
-
-p {
-    color: black;
-}
-
-main {
-    color: black;
-}
-
-.hangman {
-    color: black;
-}
-
-.man {
-    color: black;
 }
 
 .word-letter {
@@ -50,6 +33,7 @@ main {
     display: inline-block;
     visibility: hidden;
     margin: 0px 5px;
+    font-size: 25px;
 }
 
 .word-underline {
@@ -61,8 +45,12 @@ main {
 }
 
 .player-one {
-    color: black;
     text-align: center;
+}
+
+.player-one-instructions {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
 
 .player-two {
@@ -70,10 +58,20 @@ main {
     text-align: center;
 }
 
-aside {
-    color: black;
+.guessed-header {
+    font-weight: bold;
+}
+
+.guessed {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.player-two-instructions {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
 
 footer {
-    text-align: center;
+    margin-bottom: 20px;
 }

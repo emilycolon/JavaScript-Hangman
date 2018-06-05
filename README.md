@@ -32,3 +32,5 @@ Use bootstrap to make it look pretty? (Silver)
 13th step: added function to check for correct guesses and unhide letter in word
 14th step: switched out separate man divs for a picture
 15th step: updated code to include function to change picture based on # of wrong guesses
+16th step: DRYed up CSS and HTML, updated font styles
+17th step: added in html to keep letter input to one character
