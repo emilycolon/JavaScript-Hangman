@@ -21,3 +21,6 @@ Use bootstrap to make it look pretty? (Silver)
 2nd step: wireframed the html
 3rd step: entered basic html and instructions
 4th step: started working on JS code and css
+5th step: updated layout on index.html, reworded instructions
+6th step: added JS to capture entered word
+7th step: added JS to capture entered letter
