@@ -9,7 +9,7 @@ function makeWordCells() {
       '<div class="word-letter ' + [x] + '">' + wordArray[x] + '</div>'
     );
     $('.word-cells-secondary').append('<div class="word-underline"></div>');
-    $('.word-letter').css('display', 'none');
+    $('.word-letter').css('visibility', 'hidden');
   }
 }
 
@@ -19,13 +19,17 @@ function pushGuess() {
 }
 
 function checkGuess() {
-  wordArray.forEach(i => {
+  for (var i = 0; i < wordArray.length; i++) {
     if (guess === wordArray[i]) {
-      // IF match, show matched part of wordArray
+      console.log(guess);
+      $('.word-letter')
+        .eq([i])
+        .css('visibility', 'visible');
+      return;
     } else {
-      // IF no match, SHOW part of hanged man
+      $('.man div:first-child').css('display', 'inline-block');
     }
-  });
+  }
 }
 
 $(document).ready(function() {

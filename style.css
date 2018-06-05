@@ -55,6 +55,7 @@ main {
     width: 15px;
     text-align: center;
     display: inline-block;
+    visibility: visible;
     margin: 0px 5px;
 }
 

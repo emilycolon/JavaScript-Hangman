@@ -29,3 +29,4 @@ Use bootstrap to make it look pretty? (Silver)
 10th step: created function to create a div for each char of the word
 11th step: added styling to create "underlines" on each letter of the word
 12th step: updated script to add two sets of divs so can hide ones with word
+13th step: added function to check for correct guesses and unhide letter in word
