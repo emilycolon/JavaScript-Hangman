@@ -1,5 +1,6 @@
 body {
-    color: black;
+    margin: 0 auto;
+    text-align: center;
 }
 
 header {
@@ -50,8 +51,12 @@ main {
     display: none;
 }
 
-.word-cells {
-    color: black;
+.word-letter {
+    width: 15px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    margin: 0px 5px;
 }
 
 .player-one {
