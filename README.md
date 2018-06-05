@@ -31,3 +31,4 @@ Use bootstrap to make it look pretty? (Silver)
 12th step: updated script to add two sets of divs so can hide ones with word
 13th step: added function to check for correct guesses and unhide letter in word
 14th step: switched out separate man divs for a picture
+15th step: updated code to include function to change picture based on # of wrong guesses

@@ -2,6 +2,7 @@ console.log('JS up and running');
 let wordArray = [];
 let guess = '';
 let guessedLetters = [];
+let wrong = 0;
 
 function makeWordCells() {
   for (var x = 0; x < wordArray.length; x++) {
@@ -18,14 +19,35 @@ function pushGuess() {
 }
 
 function checkGuess() {
-  for (var i = 0; i < wordArray.length; i++) {
-    let order = $.inArray(guess, wordArray);
-    if (order >= 0) {
-      $('.word-letter')
-        .eq(order)
-        .css('visibility', 'visible');
-    } else {
+  let order = $.inArray(guess, wordArray);
+  if (order >= 0) {
+    for (var i = 0; i < wordArray.length; i++) {
+      if (guess === wordArray[i]) {
+        $('.word-letter')
+          .eq(i)
+          .css('visibility', 'visible');
+      }
     }
+  } else {
+    wrong++;
+    showWrong();
+  }
+}
+
+function showWrong() {
+  if (wrong === 1) {
+    $('.man').html('<img src="images/head.jpg" alt="hang man!">');
+  } else if (wrong === 2) {
+    $('.man').html('<img src="images/body.png" alt="hang man!">');
+  } else if (wrong === 3) {
+    $('.man').html('<img src="images/left-arm.png" alt="hang man!">');
+  } else if (wrong === 4) {
+    $('.man').html('<img src="images/right-arm.png" alt="hang man!">');
+  } else if (wrong === 5) {
+    $('.man').html('<img src="images/left-leg.png" alt="hang man!">');
+  } else {
+    $('.man').html('<img src="images/right-leg.png" alt="hang man!">');
+    alert('Game Over! Player One Wins!');
   }
 }
 
@@ -45,13 +67,11 @@ $(document).ready(function() {
       .val()
       .toUpperCase();
     guess = guessInput;
-    // check input against wordArray
     pushGuess();
     checkGuess();
   });
 
   $('.instructions-link').on('click', function(evt) {
-    // changes to display (toggle)
     $('.instructions').toggle();
   });
 });
