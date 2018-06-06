@@ -3,6 +3,7 @@ let wordArray = [];
 let guess = '';
 let guessedLetters = [];
 let wrong = 0;
+let correct = 0;
 
 function makeWordCells() {
   for (var x = 0; x < wordArray.length; x++) {
@@ -15,17 +16,12 @@ function makeWordCells() {
 
 function verifyGuess() {
   if (guessedLetters.length === 0) {
-    if (guess === '') {
-      return;
-    } else {
-      pushGuess();
-      checkGuess();
-      $('.guess').val('');
-    }
+    pushGuess();
+    checkGuess();
+    $('.guess').val('');
   } else {
     let order = $.inArray(guess, guessedLetters);
     if (order >= 0) {
-      console.log('This letter has already been guessed.');
       $('.guess')
         .val('')
         .replaceWith(
@@ -57,11 +53,15 @@ function checkGuess() {
         $('.word-letter')
           .eq(i)
           .css('visibility', 'visible');
+        correct++;
       }
     }
   } else {
     wrong++;
     showWrong();
+  }
+  if (correct === wordArray.length) {
+    gameOver();
   }
 }
 
@@ -102,6 +102,8 @@ function showWrong() {
 function gameOver(x) {
   if (x === 'loss') {
     console.log('loss');
+  } else {
+    console.log('win');
   }
 }
 
@@ -112,7 +114,6 @@ $(document).ready(function() {
       .toUpperCase();
     wordArray = word.split('');
     if (word === '') {
-      // $('.word').addClass('has-error');
       return;
     } else {
       $('.assigner').css('display', 'none');
@@ -126,7 +127,11 @@ $(document).ready(function() {
       .val()
       .toUpperCase();
     guess = guessInput;
-    verifyGuess();
+    if (guess === '') {
+      return;
+    } else {
+      verifyGuess();
+    }
   });
 
   $('#my-btn').on('click', function(evt) {

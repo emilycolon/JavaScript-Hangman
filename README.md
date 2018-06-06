@@ -49,3 +49,4 @@ MVP COMPLETED
 22nd step: further updated style and refined buttons
 23rd step: more updates to styling!
 24th step: updated pictures
+25th step: added to script to include win/lose logic
