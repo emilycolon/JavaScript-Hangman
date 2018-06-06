@@ -10,6 +10,20 @@ header {
     margin-bottom: 30px;
 }
 
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 0px 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+    font-weight: bold;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -54,8 +68,39 @@ header {
     padding: 10px 16px 2px 16px;
 }
 
+.assigner {
+    text-align: center;
+}
+
+.word {
+    margin-top: 30px;
+}
+
+.assigner-instructions {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+}
+
+.guesser {
+    display: none;
+    text-align: center;
+}
+
+.word-cells-main {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+.word-cells-secondary {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    font-size: 2px;
+}
+
 .word-letter {
-    width: 15px;
+    width: 16px;
     text-align: center;
     display: inline-block;
     visibility: hidden;
@@ -64,29 +109,17 @@ header {
 }
 
 .word-underline {
-    width: 15px;
+    width: 16px;
     text-align: center;
     display: inline-block;
     border-top: 2px solid black;
     margin: 0px 5px;
-}
-
-.player-one {
-    text-align: center;
-}
-
-.player-one-instructions {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
-
-.player-two {
-    display: none;
-    text-align: center;
+    font-size: 2px;
 }
 
 .guessed-header {
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .guessed {
@@ -94,9 +127,9 @@ header {
     font-size: 15px;
 }
 
-.player-two-instructions {
+.guesser-instructions {
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    margin-top: 15px;
 }
 
 footer {

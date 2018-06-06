@@ -1,6 +1,6 @@
 console.log('JS up and running');
-let modal = $('#myModal');
-let btn = $('#myBtn');
+let modal = $('#my-modal');
+let btn = $('#my-btn');
 let span = $('.close');
 let wordArray = [];
 let guess = '';
@@ -85,9 +85,9 @@ function showWrong() {
 }
 
 $(document).ready(function() {
-  $('.button-player-one').on('click', function(evt) {
-    $('.player-one').css('display', 'none');
-    $('.player-two').css('display', 'block');
+  $('.button-assigner').on('click', function(evt) {
+    $('.assigner').css('display', 'none');
+    $('.guesser').css('display', 'block');
     let word = $('.word')
       .val()
       .toUpperCase();
@@ -95,7 +95,7 @@ $(document).ready(function() {
     makeWordCells();
   });
 
-  $('.button-player-two').on('click', function(evt) {
+  $('.button-guesser').on('click', function(evt) {
     let guessInput = $('.guess')
       .val()
       .toUpperCase();

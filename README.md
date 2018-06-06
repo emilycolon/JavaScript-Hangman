@@ -45,3 +45,4 @@ Gold: same as above but remove text input and make letters clickable buttons
 MVP COMPLETED
 
 20th step: added modal for instructions
+21st step: updated styling
