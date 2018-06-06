@@ -105,6 +105,7 @@ $(document).ready(function() {
       .toUpperCase();
     wordArray = word.split('');
     if (word === '') {
+      // $('.word').addClass('has-error');
       return;
     } else {
       $('.assigner').css('display', 'none');

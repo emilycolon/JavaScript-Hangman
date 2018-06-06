@@ -15,16 +15,6 @@ div {
     margin-bottom: 10px;
 }
 
-input {
-    padding: 0px 5px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.button {
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
 .modal {
     display: none;
     position: fixed;
@@ -71,6 +61,7 @@ input {
 
 .assigner {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .word {
@@ -80,6 +71,13 @@ input {
 .guesser {
     display: none;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .word-cells-main {
@@ -115,12 +113,13 @@ input {
 
 .guessed-header {
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .guessed {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 footer {
