@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
-    background: white;
+    background-image: url(images/lined-paper-2.png);
 }
 
 header {
@@ -22,6 +22,7 @@ input {
 
 .button {
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .modal {
@@ -76,11 +77,6 @@ input {
     margin-top: 30px;
 }
 
-.assigner-instructions {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 15px;
-}
-
 .guesser {
     display: none;
     text-align: center;
@@ -125,11 +121,6 @@ input {
 .guessed {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-}
-
-.guesser-instructions {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 15px;
 }
 
 footer {

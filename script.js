@@ -1,7 +1,4 @@
 console.log('JS up and running');
-let modal = $('#my-modal');
-let btn = $('#my-btn');
-let span = $('.close');
 let wordArray = [];
 let guess = '';
 let guessedLetters = [];
@@ -23,6 +20,7 @@ function verifyGuess() {
     } else {
       pushGuess();
       checkGuess();
+      $('.guess').val('');
     }
   } else {
     let order = $.inArray(guess, guessedLetters);
@@ -69,30 +67,50 @@ function checkGuess() {
 
 function showWrong() {
   if (wrong === 1) {
-    $('.man').html('<img src="images/head.jpg" alt="hang man!">');
+    $('.man').html(
+      '<img src="images/head.jpg" class="img-responsive" alt="hang man!">'
+    );
+    return;
   } else if (wrong === 2) {
-    $('.man').html('<img src="images/body.png" alt="hang man!">');
+    $('.man').html(
+      '<img src="images/body.png" class="img-responsive" alt="hang man!">'
+    );
+    return;
   } else if (wrong === 3) {
-    $('.man').html('<img src="images/left-arm.png" alt="hang man!">');
+    $('.man').html(
+      '<img src="images/left-arm.png" class="img-responsive" alt="hang man!">'
+    );
+    return;
   } else if (wrong === 4) {
-    $('.man').html('<img src="images/right-arm.png" alt="hang man!">');
+    $('.man').html(
+      '<img src="images/right-arm.png" class="img-responsive" alt="hang man!">'
+    );
+    return;
   } else if (wrong === 5) {
-    $('.man').html('<img src="images/left-leg.png" alt="hang man!">');
+    $('.man').html(
+      '<img src="images/left-leg.png" class="img-responsive" alt="hang man!">'
+    );
+    return;
   } else {
-    $('.man').html('<img src="images/right-leg.png" alt="hang man!">');
-    alert('Game Over! Player One Wins!');
+    $('.man').html(
+      '<img src="images/right-leg.png" class="img-responsive" alt="hang man!">'
+    );
   }
 }
 
 $(document).ready(function() {
   $('.button-assigner').on('click', function(evt) {
-    $('.assigner').css('display', 'none');
-    $('.guesser').css('display', 'block');
     let word = $('.word')
       .val()
       .toUpperCase();
     wordArray = word.split('');
-    makeWordCells();
+    if (word === '') {
+      return;
+    } else {
+      $('.assigner').css('display', 'none');
+      $('.guesser').css('display', 'block');
+      makeWordCells();
+    }
   });
 
   $('.button-guesser').on('click', function(evt) {
@@ -103,17 +121,11 @@ $(document).ready(function() {
     verifyGuess();
   });
 
-  btn.on('click', function(evt) {
-    modal.css('display', 'block');
+  $('#my-btn').on('click', function(evt) {
+    $('#my-modal').css('display', 'block');
   });
 
-  span.on('click', function(evt) {
-    modal.css('display', 'none');
-  });
-
-  window.on('click', function(evt) {
-    if (event.target == modal) {
-      modal.css('display', 'none');
-    }
+  $('.close').on('click', function(evt) {
+    $('#my-modal').css('display', 'none');
   });
 });

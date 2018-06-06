@@ -13,60 +13,61 @@
 </head>
 
 <body>
-    <header>
-        <h1>Get ready to play some Hangman!</h1>
-    </header>
-    <button class="instructions-btn" id="my-btn">Instructions</button>
-    <div id="my-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4>Instructions</h4>
-                <span class="close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p>The first player will pick a word that the second player will try to guess letter by letter. Every wrong
-                    letter guessed will result in a "piece" of the hanged man added to the gallows. Try to guess the word
-                    before he swings!
-                </p>
-                <p>When picking a word you can only choose a single word that does not include punctuation. You will win the
-                    game if the guesser is unable to guess the word before the man is hanged.</p>
-                <p>When guessing, your goal is to try to guess the word one letter at a time. Wrong guesses will result in more
-                    of the hanged man added to the gallows. Correct guesses will reveal more of the submitted word. Don't
-                    worry, you won't be penalized if you choose the same letter more than once! You will win the game if
-                    you are able to guess the word before the man is hanged.</p>
+    <div class="container-fluid">
+        <header>
+            <h1>Get ready to play some Hangman!</h1>
+        </header>
+        <button typw="button" class="btn button btn-primary instructions-btn" id="my-btn">Instructions</button>
+        <div id="my-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Instructions</h4>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body text-info">
+                    <p>The first player will pick a word that the second player will try to guess letter by letter. Every wrong
+                        letter guessed will result in a "piece" of the hanged man added to the gallows. Try to guess the
+                        word before he swings!
+                    </p>
+                    <p>When picking a word you can only choose a single word that does not include punctuation. You will win
+                        the game if the guesser is unable to guess the word before the man is hanged.</p>
+                    <p>When guessing, your goal is to try to guess the word one letter at a time. Wrong guesses will result
+                        in more of the hanged man added to the gallows. Correct guesses will reveal more of the submitted
+                        word. Don't worry, you won't be penalized if you choose the same letter more than once! You will
+                        win the game if you are able to guess the word before the man is hanged.</p>
+                </div>
             </div>
         </div>
+        <main>
+
+            <div class="gallows">
+                <div class="man">
+                    <img src="images/empty-gallows.png" class="img-responsive" alt="hang man!">
+                </div>
+                <div class="word-cells-main"></div>
+                <div class="word-cells-secondary"></div>
+            </div>
+
+
+            <div class="assigner">
+                <input type="text" class="word" placeholder="Input a word">
+                <button class="button btn button-submit button-assigner btn-default">SUBMIT</button>
+            </div>
+
+
+            <div class="guesser">
+                <p class="guessed-header">GUESSED LETTERS:</p>
+                <p class="guessed"></p>
+                <input type="text" class="guess" maxlength="1" placeholder="Input a letter">
+                <button class="button btn button-submit button-guesser btn-default">SUBMIT</button>
+            </div>
+
+
+        </main>
+        <footer></footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </div>
-    <main>
-
-        <div class="gallows">
-            <div class="man">
-                <img src="images/empty-gallows.png" alt="hang man!">
-            </div>
-            <div class="word-cells-main"></div>
-            <div class="word-cells-secondary"></div>
-        </div>
-
-
-        <div class="assigner">
-            <input type="text" class="word" placeholder="Input a word">
-            <button class="button button-submit button-assigner">SUBMIT</button>
-            <h5 class="assigner-instructions">Enter a word in the text box above and click the Submit button.</h5>
-        </div>
-
-
-        <div class="guesser">
-            <p class="guessed-header">GUESSED LETTERS:</p>
-            <p class="guessed"></p>
-            <input type="text" class="guess" maxlength="1" placeholder="Input a letter">
-            <button class="button button-submit button-guesser">SUBMIT</button>
-            <h5 class="guesser-instructions">Enter a letter into the text box above and click the submit button in order to try to guess the word.</h5>
-        </div>
-
-    </main>
-    <footer></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
