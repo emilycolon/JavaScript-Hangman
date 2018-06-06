@@ -14,12 +14,14 @@ Once submitted, remove this and replace with gray squares that will be equal to 
 MVP: have an input field THAT ONLY ACCEPTS ONE LETTER and a Submit Button
 
 Silver: same as above have all of the alphabet represented below the input and cross them out as they are "used"
+Use bootstrap to make it look pretty? (Silver)
 
 Gold: same as above but remove text input and make letters clickable buttons
 
 - switch who enters word
-
-Use bootstrap to make it look pretty? (Silver)
+  add scoring for P1 and P2
+  track if word is guessed -> add point to P2 (add point to score - match to word.length)
+  track if man is hanged -> add point to P1
 
 1st step: created pages
 2nd step: wireframed the html
@@ -42,6 +44,4 @@ Use bootstrap to make it look pretty? (Silver)
 19th step: updated script to stop input of duplicate guessed letters
 MVP COMPLETED
 
-add scoring for P1 and P2
-track if word is guessed -> add point to P2 (add point to score - match to word.length)
-track if man is hanged -> add point to P1
+20th step: added modal for instructions

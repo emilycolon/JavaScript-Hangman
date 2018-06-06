@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <title>Hangman</title>
 </head>
@@ -13,21 +15,28 @@
 <body>
     <header>
         <h1>Get ready to play some Hangman!</h1>
-        <ul>
-            <li>
-                <a href="#" class="link instructions-link">Instructions</a>
-            </li>
-        </ul>
-        <p class="instructions">The first player will pick a word that the second player will try to guess letter by letter. Every wrong letter guessed
-            will result in a "piece" of the hanged man added to the gallows. Try to guess the word before he swings!
-        </p>
-        <p class="instructions">When picking a word you can only choose a single word that does not include punctuation. You will win the game if
-            the guesser is unable to guess the word before the man is hanged.</p>
-        <p class="instructions">When guessing, your goal is to try to guess the word one letter at a time. Wrong guesses will result in more of the
-            hanged man added to the gallows. Correct guesses will reveal more of the submitted word. Don't worry, you won't
-            be penalized if you choose the same letter more than once! You will win the game if you are able to guess the
-            word before the man is hanged.</p>
     </header>
+    <button class="instructions-btn" id="myBtn">Instructions</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Instructions</h4>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>The first player will pick a word that the second player will try to guess letter by letter. Every wrong
+                    letter guessed will result in a "piece" of the hanged man added to the gallows. Try to guess the word
+                    before he swings!
+                </p>
+                <p>When picking a word you can only choose a single word that does not include punctuation. You will win the
+                    game if the guesser is unable to guess the word before the man is hanged.</p>
+                <p>When guessing, your goal is to try to guess the word one letter at a time. Wrong guesses will result in more
+                    of the hanged man added to the gallows. Correct guesses will reveal more of the submitted word. Don't
+                    worry, you won't be penalized if you choose the same letter more than once! You will win the game if
+                    you are able to guess the word before the man is hanged.</p>
+            </div>
+        </div>
+    </div>
     <main>
         <div class="gallows">
             <div class="hangman">

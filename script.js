@@ -1,4 +1,7 @@
 console.log('JS up and running');
+let modal = $('#myModal');
+let btn = $('#myBtn');
+let span = $('.close');
 let wordArray = [];
 let guess = '';
 let guessedLetters = [];
@@ -15,8 +18,12 @@ function makeWordCells() {
 
 function verifyGuess() {
   if (guessedLetters.length === 0) {
-    pushGuess();
-    checkGuess();
+    if (guess === '') {
+      return;
+    } else {
+      pushGuess();
+      checkGuess();
+    }
   } else {
     let order = $.inArray(guess, guessedLetters);
     if (order >= 0) {
@@ -96,7 +103,17 @@ $(document).ready(function() {
     verifyGuess();
   });
 
-  $('.instructions-link').on('click', function(evt) {
-    $('.instructions').toggle();
+  btn.on('click', function(evt) {
+    modal.css('display', 'block');
+  });
+
+  span.on('click', function(evt) {
+    modal.css('display', 'none');
+  });
+
+  window.on('click', function(evt) {
+    if (event.target == modal) {
+      modal.css('display', 'none');
+    }
   });
 });
