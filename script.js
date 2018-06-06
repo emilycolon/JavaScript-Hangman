@@ -68,7 +68,7 @@ function checkGuess() {
 function showWrong() {
   if (wrong === 1) {
     $('.man').html(
-      '<img src="images/head.jpg" class="img-responsive" alt="hang man!">'
+      '<img src="images/head.png" class="img-responsive" alt="hang man!">'
     );
     return;
   } else if (wrong === 2) {
@@ -95,6 +95,13 @@ function showWrong() {
     $('.man').html(
       '<img src="images/right-leg.png" class="img-responsive" alt="hang man!">'
     );
+    gameOver('loss');
+  }
+}
+
+function gameOver(x) {
+  if (x === 'loss') {
+    console.log('loss');
   }
 }
 

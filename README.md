@@ -48,3 +48,4 @@ MVP COMPLETED
 21st step: updated styling
 22nd step: further updated style and refined buttons
 23rd step: more updates to styling!
+24th step: updated pictures
