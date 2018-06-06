@@ -34,3 +34,4 @@ Use bootstrap to make it look pretty? (Silver)
 15th step: updated code to include function to change picture based on # of wrong guesses
 16th step: DRYed up CSS and HTML, updated font styles
 17th step: added in html to keep letter input to one character
+18th step: updated html to change order of elements on the page
