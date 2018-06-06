@@ -40,6 +40,7 @@ Use bootstrap to make it look pretty? (Silver)
 17th step: added in html to keep letter input to one character
 18th step: updated html to change order of elements on the page
 19th step: updated script to stop input of duplicate guessed letters
+MVP COMPLETED
 
 add scoring for P1 and P2
 track if word is guessed -> add point to P2 (add point to score - match to word.length)
