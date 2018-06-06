@@ -13,6 +13,32 @@ function makeWordCells() {
   }
 }
 
+function verifyGuess() {
+  if (guessedLetters.length === 0) {
+    pushGuess();
+    checkGuess();
+  } else {
+    let order = $.inArray(guess, guessedLetters);
+    if (order >= 0) {
+      console.log('This letter has already been guessed.');
+      $('.guess')
+        .val('')
+        .replaceWith(
+          '<input type="text" class="guess" maxlength="1" placeholder="Letter already guessed!">'
+        );
+      return;
+    } else {
+      $('.guess')
+        .val('')
+        .replaceWith(
+          '<input type="text" class="guess" maxlength="1" placeholder="Input a letter">'
+        );
+      pushGuess();
+      checkGuess();
+    }
+  }
+}
+
 function pushGuess() {
   guessedLetters.push(guess);
   $('.guessed').text(guessedLetters);
@@ -67,9 +93,7 @@ $(document).ready(function() {
       .val()
       .toUpperCase();
     guess = guessInput;
-    pushGuess();
-    checkGuess();
-    $('.guess').val('');
+    verifyGuess();
   });
 
   $('.instructions-link').on('click', function(evt) {

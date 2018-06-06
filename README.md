@@ -12,8 +12,12 @@ Prompt for Player One to enter a word in a Text Input with Submit Button
 Once submitted, remove this and replace with gray squares that will be equal to the # of letters in the word
 
 MVP: have an input field THAT ONLY ACCEPTS ONE LETTER and a Submit Button
+
 Silver: same as above have all of the alphabet represented below the input and cross them out as they are "used"
+
 Gold: same as above but remove text input and make letters clickable buttons
+
+- switch who enters word
 
 Use bootstrap to make it look pretty? (Silver)
 
@@ -35,3 +39,8 @@ Use bootstrap to make it look pretty? (Silver)
 16th step: DRYed up CSS and HTML, updated font styles
 17th step: added in html to keep letter input to one character
 18th step: updated html to change order of elements on the page
+19th step: updated script to stop input of duplicate guessed letters
+
+add scoring for P1 and P2
+track if word is guessed -> add point to P2 (add point to score - match to word.length)
+track if man is hanged -> add point to P1
