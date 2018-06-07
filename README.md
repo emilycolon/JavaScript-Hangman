@@ -53,3 +53,4 @@ MVP COMPLETED
 26th step: updated win/lose pictures
 27th step: updated styling for in game/on screen instructions
 28th step: updated styling for on screen elements
+29th step: changed all pxs to ems
