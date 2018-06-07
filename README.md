@@ -57,3 +57,4 @@ MVP COMPLETED
 30th: corrected ems and changed script re: wordArray
 31st: added timer
 32nd: completed layout styling for desktop, created 500-900px responsiveness
+33rd: completed 500-900px responsiveness

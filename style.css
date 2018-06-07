@@ -6,8 +6,6 @@ body {
     background-image: url(images/lined-paper-2.png);
 }
 
-@media screen and (max-width: 500px) {}
-
 header {
     margin-top: 0.857em;
     margin-bottom: 0.714em;
@@ -109,7 +107,7 @@ h1 {
 }
 
 .word {
-    margin-top: 2.143em;
+    margin-top: 2.2em;
 }
 
 input {
@@ -192,6 +190,13 @@ strong {
 }
 
 @media screen and (max-width: 900px) {
+    .word {
+        margin-top: 2.5em;
+    }
+    .instructions {
+        font-size: 1.25em;
+        width: 100%;
+    }
     .word-cells-main {
         width: 100%;
     }
@@ -214,3 +219,5 @@ strong {
         text-align: center;
     }
 }
+
+@media screen and (max-width: 500px) {}
