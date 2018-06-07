@@ -50,3 +50,4 @@ MVP COMPLETED
 23rd step: more updates to styling!
 24th step: updated pictures
 25th step: added to script to include win/lose logic
+26th step: updated win/lose pictures

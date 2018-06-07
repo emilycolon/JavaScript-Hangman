@@ -6,8 +6,14 @@ body {
 }
 
 header {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
 div {
@@ -94,16 +100,17 @@ div {
 }
 
 .word-letter {
-    width: 16px;
+    width: 18px;
     text-align: center;
     display: inline-block;
     visibility: hidden;
     margin: 0px 5px;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .word-underline {
-    width: 16px;
+    width: 18px;
     text-align: center;
     display: inline-block;
     border-top: 2px solid black;
@@ -123,5 +130,8 @@ div {
 }
 
 footer {
-    margin-bottom: 50px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }

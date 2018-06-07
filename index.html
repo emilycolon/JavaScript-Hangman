@@ -14,10 +14,15 @@
 
 <body>
     <div class="container-fluid">
-        <header>
-            <h1>Get ready to play some Hangman!</h1>
-        </header>
-        <button typw="button" class="btn button btn-primary instructions-btn" id="my-btn">Instructions</button>
+
+        <div class="row">
+            <header class="col-12">
+                <h1>Let's play Hangman!</h1>
+                <button type="button" class="btn button btn-primary instructions-btn" id="my-btn">Instructions</button>
+            </header>
+        </div>
+
+
         <div id="my-modal" class="modal">
             <div class="modal-content">
                 <div class="modal-header">
@@ -38,33 +43,40 @@
                 </div>
             </div>
         </div>
+
         <main>
-
-            <div class="gallows">
-                <div class="man">
-                    <img src="images/empty-gallows.png" class="img-responsive" alt="hang man!">
+            <div class="row">
+                <div class="gallows col-6">
+                    <div class="man">
+                        <img src="images/empty-gallows.png" class="img-responsive" alt="hang man!">
+                    </div>
+                    <div class="word-cells-main"></div>
+                    <div class="word-cells-secondary"></div>
                 </div>
-                <div class="word-cells-main"></div>
-                <div class="word-cells-secondary"></div>
+
+
+                <div class="assigner col-6">
+                    <input type="text" class="word" placeholder="Input a word">
+                    <button class="button btn button-submit button-assigner btn-default">SUBMIT</button>
+                    <p class="">First Player!</p>
+                    <p>Enter a word for the second player to guess.</p>
+                    <p>Second Player!</p>
+                    <p>Look Away!</p>
+                </div>
+
+
+                <div class="guesser col-6">
+                    <p class="guessed-header">GUESSED LETTERS:</p>
+                    <p class="guessed"> - </p>
+                    <input type="text" class="guess" maxlength="1" placeholder="Input a letter">
+                    <button type="button" class="button btn button-submit button-guesser btn-default">SUBMIT</button>
+                </div>
             </div>
-
-
-            <div class="assigner">
-                <input type="text" class="word" placeholder="Input a word">
-                <button class="button btn button-submit button-assigner btn-default">SUBMIT</button>
-            </div>
-
-
-            <div class="guesser">
-                <p class="guessed-header">GUESSED LETTERS:</p>
-                <p class="guessed"> - </p>
-                <input type="text" class="guess" maxlength="1" placeholder="Input a letter">
-                <button class="button btn button-submit button-guesser btn-default">SUBMIT</button>
-            </div>
-
 
         </main>
-        <footer></footer>
+        <footer>
+            <p> Emily Colón | 2018 </p>
+        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="script.js"></script>
     </div>

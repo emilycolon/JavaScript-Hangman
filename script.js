@@ -92,18 +92,19 @@ function showWrong() {
     );
     return;
   } else {
-    $('.man').html(
-      '<img src="images/right-leg.png" class="img-responsive" alt="hang man!">'
-    );
     gameOver('loss');
   }
 }
 
 function gameOver(x) {
   if (x === 'loss') {
-    console.log('loss');
+    $('.man').html(
+      '<img src="images/you-lose.png" class="img-responsive" alt="hang man!">'
+    );
   } else {
-    console.log('win');
+    $('.man').html(
+      '<img src="images/you-win.png" class="img-responsive" alt="hang man!">'
+    );
   }
 }
 
