@@ -131,7 +131,32 @@ function gameOver(x) {
   }
 }
 
+function smallScreen() {
+  if ($(window).width() <= 500) {
+    $('.row').addClass('d-flex flex-column');
+    $('.six').removeClass('col-6');
+  }
+}
+
+function bigScreen() {
+  if ($(window).width() > 500) {
+    $('.row').removeClass('d-flex flex-column');
+    $('.six').addClass('col-6');
+  }
+}
+
 $(document).ready(function() {
+  smallScreen();
+
+  $(window).resize(function() {
+    size = $(window).width();
+    if (size <= 500) {
+      smallScreen();
+    } else {
+      bigScreen();
+    }
+  });
+
   $('.button-assigner').on('click', function(evt) {
     let word = $('.word')
       .val()

@@ -58,3 +58,4 @@ MVP COMPLETED
 31st: added timer
 32nd: completed layout styling for desktop, created 500-900px responsiveness
 33rd: completed 500-900px responsiveness
+34th: completed responsiveness for <500px

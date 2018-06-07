@@ -220,4 +220,61 @@ strong {
     }
 }
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+    header {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        letter-spacing: 0.143em;
+        margin-bottom: .85em;
+        font-size: 2em;
+    }
+    .instructions-div {
+        text-align: center;
+        padding-right: 0;
+    }
+    .Timer {
+        font-size: 2em;
+        text-align: center;
+        padding-left: 0;
+    }
+    .man {
+        text-align: center;
+        padding-top: 0em;
+        padding-right: 0em;
+    }
+    img {
+        height: 12em;
+    }
+    .instructions {
+        font-size: 1.2em;
+        margin-left: auto;
+        width: 90%;
+    }
+    .word {
+        margin-top: 2em;
+    }
+    .guesser {
+        text-align: center;
+    }
+    .word-cells-main {
+        margin-left: auto;
+        width: 100%;
+    }
+    .word-letter {
+        font-size: 1.5em;
+    }
+    .guessed-header {
+        margin-left: auto;
+        width: 100%;
+    }
+    .guessed {
+        font-size: 1.25em;
+        margin-left: auto;
+        width: 100%;
+    }
+    .input {
+        margin-left: auto;
+    }
+}
