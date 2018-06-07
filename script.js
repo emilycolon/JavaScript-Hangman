@@ -6,11 +6,8 @@ let wrong = 0;
 let correct = 0;
 
 function makeWordCells() {
-  for (var x = 0; x < wordArray.length; x++) {
-    $('.word-cells-main').append(
-      '<div class="word-letter ' + [x] + '">' + wordArray[x] + '</div>'
-    );
-    $('.word-cells-secondary').append('<div class="word-underline"></div>');
+  for (var i = 0; i < wordArray.length; i++) {
+    $('.word-cells-main').append('<div class="word-letter ' + [i] + '"></div>');
   }
 }
 
@@ -52,7 +49,7 @@ function checkGuess() {
       if (guess === wordArray[i]) {
         $('.word-letter')
           .eq(i)
-          .css('visibility', 'visible');
+          .text(wordArray[i]);
         correct++;
       }
     }
@@ -101,10 +98,18 @@ function gameOver(x) {
     $('.man').html(
       '<img src="images/you-lose.png" class="img-responsive" alt="hang man!">'
     );
+    setTimeout(function() {
+      alert('You lose! Play again?');
+      location.reload();
+    }, 1500);
   } else {
     $('.man').html(
       '<img src="images/you-win.png" class="img-responsive" alt="hang man!">'
     );
+    setTimeout(function() {
+      alert('You win! Play again?');
+      location.reload();
+    }, 1500);
   }
 }
 

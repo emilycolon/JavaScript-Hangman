@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
-    font-size: 0.857em;
+    font-size: 14px;
     background-image: url(images/lined-paper-2.png);
 }
 
@@ -42,6 +42,7 @@ div {
     border: 0.071em solid rgb(0, 0, 0);
     width: 75%;
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.929em;
 }
 
 .close {
@@ -105,34 +106,23 @@ input {
 
 .word-cells-main {
     margin-top: 0.714em;
-    margin-bottom: 0em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 1.429em;
-}
-
-.word-cells-secondary {
-    margin-top: 0em;
-    margin-bottom: 0.714em;
-    padding-bottom: 2.143em;
-    font-size: 0.143em;
+    width: 80%;
+    text-align: center;
 }
 
 .word-letter {
-    width: 2.143em;
+    width: 1.286em;
     text-align: center;
     display: inline-block;
-    visibility: hidden;
     margin: 0em 0.357em;
     font-size: 1.786em;
     font-weight: bold;
-}
-
-.word-underline {
-    width: 2.143em;
-    text-align: center;
-    display: inline-block;
-    border-top: 0.143em solid black;
-    margin: 0em 0.357em;
-    font-size: 0.143em;
+    border-bottom: 0.125em solid black;
+    vertical-align: bottom;
 }
 
 .guesser {
@@ -142,7 +132,7 @@ input {
 
 .guessed-header {
     font-weight: bold;
-    margin-top: 0em;
+    margin-top: 1em;
     font-family: 'Open Sans', sans-serif;
 }
 

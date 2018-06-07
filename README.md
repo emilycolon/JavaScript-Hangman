@@ -54,3 +54,4 @@ MVP COMPLETED
 27th step: updated styling for in game/on screen instructions
 28th step: updated styling for on screen elements
 29th step: changed all pxs to ems
+30th: corrected ems and changed script re: wordArray
