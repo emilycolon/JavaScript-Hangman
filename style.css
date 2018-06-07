@@ -6,6 +6,8 @@ body {
     background-image: url(images/lined-paper-2.png);
 }
 
+@media screen and (max-width: 500px) {}
+
 header {
     margin-top: 0.857em;
     margin-bottom: 0.714em;
@@ -17,14 +19,22 @@ h1 {
     margin-bottom: 1.429em;
 }
 
+.instructions-div {
+    text-align: right;
+    padding-right: 5em;
+}
+
 .Timer {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
+    text-align: left;
+    padding-left: 3em;
 }
 
-div {
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
+.man {
+    text-align: right;
+    padding-top: 2em;
+    padding-right: 4em;
 }
 
 .modal {
@@ -80,6 +90,10 @@ div {
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 0.071em;
     font-size: 1.429em;
+    margin-left: 0em;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
 }
 
 .one {
@@ -109,13 +123,19 @@ input {
     letter-spacing: 0.071em;
 }
 
+.guesser {
+    display: none;
+    text-align: left;
+    padding-top: 1em;
+}
+
 .word-cells-main {
     margin-top: 0.714em;
     margin-bottom: 1em;
-    margin-left: auto;
+    margin-left: 0em;
     margin-right: auto;
     padding-top: 1.429em;
-    width: 80%;
+    width: 60%;
     text-align: center;
 }
 
@@ -130,14 +150,13 @@ input {
     vertical-align: bottom;
 }
 
-.guesser {
-    display: none;
-    text-align: center;
-}
-
 .guessed-header {
     font-weight: bold;
     margin-top: 1em;
+    margin-left: 0em;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -145,7 +164,19 @@ input {
     font-size: 1.429em;
     letter-spacing: 0.071em;
     margin-bottom: 1.429em;
+    margin-left: 0em;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
+    visibility: hidden;
+}
+
+.input {
+    margin-left: 0em;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
 }
 
 footer {
@@ -158,4 +189,28 @@ footer {
 
 strong {
     font-size: 1.429em;
+}
+
+@media screen and (max-width: 900px) {
+    .word-cells-main {
+        width: 100%;
+    }
+    .word-letter {
+        width: 1em;
+        font-size: 1.25em;
+    }
+    .guessed-header {
+        margin-left: 0em;
+        margin-right: auto;
+        width: 100%;
+    }
+    .guessed {
+        font-size: 1.25em;
+        text-align: center;
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+        text-align: center;
+    }
 }

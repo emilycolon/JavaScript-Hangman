@@ -56,3 +56,4 @@ MVP COMPLETED
 29th step: changed all pxs to ems
 30th: corrected ems and changed script re: wordArray
 31st: added timer
+32nd: completed layout styling for desktop, created 500-900px responsiveness

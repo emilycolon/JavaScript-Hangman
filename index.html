@@ -22,7 +22,7 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="instructions-div col-6">
                     <button type="button" class="btn button btn-primary instructions-btn" id="my-btn">Instructions</button>
                 </div>
                 <div class="Timer col-6 text-danger">
@@ -63,8 +63,10 @@
 
 
                 <div class="assigner col-6">
-                    <input type="text" class="word" placeholder="Input a word">
-                    <button class="button btn button-submit button-assigner btn-default">SUBMIT</button>
+                    <div class="input">
+                        <input type="text" class="word" placeholder="Input a word">
+                        <button class="button btn button-submit button-assigner btn-default">SUBMIT</button>
+                    </div>
                     <p class="instructions one">First Player:</p>
                     <p class="instructions two">Enter a word for the second player to guess.</p>
                     <p class="instructions three">Second Player:</p>
@@ -73,11 +75,15 @@
 
 
                 <div class="guesser col-6">
+                    <!-- text-align: left; -->
                     <div class="word-cells-main"></div>
+                    <!-- text-align: center; 60% -->
                     <p class="guessed-header">GUESSED LETTERS:</p>
                     <p class="guessed"> - </p>
-                    <input type="text" class="guess" maxlength="1" placeholder="Input a letter">
-                    <button type="button" class="button btn button-submit button-guesser btn-default">SUBMIT</button>
+                    <div class="input">
+                        <input type="text" class="guess" maxlength="1" placeholder="Input a letter">
+                        <button type="button" class="button btn button-submit button-guesser btn-default">SUBMIT</button>
+                    </div>
                 </div>
             </div>
 

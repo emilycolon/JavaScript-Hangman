@@ -39,7 +39,9 @@ function verifyGuess() {
 
 function pushGuess() {
   guessedLetters.push(guess);
-  $('.guessed').text(guessedLetters);
+  $('.guessed')
+    .text(guessedLetters)
+    .css('visibility', 'visible');
 }
 
 function checkGuess() {
