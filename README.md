@@ -1,61 +1,23 @@
-# project-1
+# GA WDI Project 1
 
-GA WDI Project 1
+I chose to create a Hangman game for my first project and I started out very basic. I created the three needed files (index.html, style.css, and script.js) and then wireframed out how I wanted the site to look. I then entered the basic html to create the "skeleton" of the site. From there I progressed to adding in JavaScript and jQuery in order to create the game logic. While working on the logic, I would periodically make updates to the html and add in CSS as I went. However, I primarily stayed away from adjusting the styling until I have a completed MVP.
 
-Instructions
-Player One will choose a word. Player Two will then attempt to guess the word.
+## Instructions:
 
-Picture which will be the hangman
+The first player will pick a word that the second player will try to guess letter by letter. Every wrong
+letter guessed will result in a "piece" of the hanged man added to the gallows. Try to guess the
+word before he swings!
+When picking a word you can only choose a single word that does not include punctuation. You will win
+the game if the guesser is unable to guess the word before the man is hanged.
+When guessing, your goal is to try to guess the word one letter at a time. Wrong guesses will result
+in more of the hanged man added to the gallows. Correct guesses will reveal more of the submitted
+word. Don't worry, you won't be penalized if you choose the same letter more than once! You will
+win the game if you are able to guess the word before the man is hanged or time runs out.
 
-Prompt for Player One to enter a word in a Text Input with Submit Button
+## Accomplishments:
 
-Once submitted, remove this and replace with gray squares that will be equal to the # of letters in the word
+I was excited to be able to include the instructions for the game as a pop-up modal on the page. I was also proud that I was able to incorporate a countdown timer that affects the outcome of the game (player loses if time runs out). The last thing I was most proud of is incorporating responsiveness in my CSS and my JavaScript codes.
 
-MVP: have an input field THAT ONLY ACCEPTS ONE LETTER and a Submit Button
+## Unsolved Problems:
 
-Silver: same as above have all of the alphabet represented below the input and cross them out as they are "used"
-Use bootstrap to make it look pretty? (Silver)
-
-Gold: same as above but remove text input and make letters clickable buttons
-
-- switch who enters word
-  add scoring for P1 and P2
-  track if word is guessed -> add point to P2 (add point to score - match to word.length)
-  track if man is hanged -> add point to P1
-
-1st step: created pages
-2nd step: wireframed the html
-3rd step: entered basic html and instructions
-4th step: started working on JS code and css
-5th step: updated layout on index.html, reworded instructions
-6th step: added JS to capture entered word
-7th step: added JS to capture entered letter
-8th step: added JS to push entered letter to guessed letters
-9th step: created divs for the parts of the man - started code to check for correct/incorrect guesses
-10th step: created function to create a div for each char of the word
-11th step: added styling to create "underlines" on each letter of the word
-12th step: updated script to add two sets of divs so can hide ones with word
-13th step: added function to check for correct guesses and unhide letter in word
-14th step: switched out separate man divs for a picture
-15th step: updated code to include function to change picture based on # of wrong guesses
-16th step: DRYed up CSS and HTML, updated font styles
-17th step: added in html to keep letter input to one character
-18th step: updated html to change order of elements on the page
-19th step: updated script to stop input of duplicate guessed letters
-MVP COMPLETED
-
-20th step: added modal for instructions
-21st step: updated styling
-22nd step: further updated style and refined buttons
-23rd step: more updates to styling!
-24th step: updated pictures
-25th step: added to script to include win/lose logic
-26th step: updated win/lose pictures
-27th step: updated styling for in game/on screen instructions
-28th step: updated styling for on screen elements
-29th step: changed all pxs to ems
-30th: corrected ems and changed script re: wordArray
-31st: added timer
-32nd: completed layout styling for desktop, created 500-900px responsiveness
-33rd: completed 500-900px responsiveness
-34th: completed responsiveness for <500px
+A few issues were encountered when attempting to apply certain bootstrap features (for example, the input boxes are not responding to the bootstrap class names).
