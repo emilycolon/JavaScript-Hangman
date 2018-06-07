@@ -14,13 +14,22 @@
 
 <body>
     <div class="container-fluid">
+        <header>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Let's play Hangman!</h1>
+                </div>
+            </div>
 
-        <div class="row">
-            <header class="col-12">
-                <h1>Let's play Hangman!</h1>
-                <button type="button" class="btn button btn-primary instructions-btn" id="my-btn">Instructions</button>
-            </header>
-        </div>
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn button btn-primary instructions-btn" id="my-btn">Instructions</button>
+                </div>
+                <div class="Timer col-6 text-danger">
+                    3:00
+                </div>
+            </div>
+        </header>
 
 
         <div id="my-modal" class="modal">
@@ -39,7 +48,7 @@
                     <p>When guessing, your goal is to try to guess the word one letter at a time. Wrong guesses will result
                         in more of the hanged man added to the gallows. Correct guesses will reveal more of the submitted
                         word. Don't worry, you won't be penalized if you choose the same letter more than once! You will
-                        win the game if you are able to guess the word before the man is hanged.</p>
+                        win the game if you are able to guess the word before the man is hanged or time runs out.</p>
                 </div>
             </div>
         </div>

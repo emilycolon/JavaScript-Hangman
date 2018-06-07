@@ -93,6 +93,22 @@ function showWrong() {
   }
 }
 
+function timer() {
+  var sec = 180;
+  setInterval(function() {
+    sec--;
+    function fmtMSS(s) {
+      return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + s;
+    }
+    $('.Timer').text(fmtMSS(sec));
+    if (sec == 0) {
+      $('.Timer').css('visibility', 'hidden');
+      clearInterval(timer);
+      gameOver('loss');
+    }
+  }, 1000);
+}
+
 function gameOver(x) {
   if (x === 'loss') {
     $('.man').html(
@@ -125,6 +141,7 @@ $(document).ready(function() {
       $('.assigner').css('display', 'none');
       $('.guesser').css('display', 'block');
       makeWordCells();
+      timer();
     }
   });
 

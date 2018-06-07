@@ -17,9 +17,14 @@ h1 {
     margin-bottom: 1.429em;
 }
 
+.Timer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
 div {
-    margin-top: 0.714em;
-    margin-bottom: 0.714em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 }
 
 .modal {
@@ -78,7 +83,7 @@ div {
 }
 
 .one {
-    margin-top: 2.857em;
+    margin-top: 1.5em;
     margin-bottom: 0em;
     font-weight: bold;
 }
