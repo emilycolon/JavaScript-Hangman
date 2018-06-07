@@ -92,9 +92,8 @@ div {
     margin-top: 30px;
 }
 
-.guesser {
-    display: none;
-    text-align: center;
+input {
+    padding: 0 0 0 5px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -136,15 +135,22 @@ div {
     font-size: 2px;
 }
 
+.guesser {
+    display: none;
+    text-align: center;
+}
+
 .guessed-header {
     font-weight: bold;
     margin-top: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .guessed {
     font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer {

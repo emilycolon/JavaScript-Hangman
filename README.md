@@ -52,3 +52,4 @@ MVP COMPLETED
 25th step: added to script to include win/lose logic
 26th step: updated win/lose pictures
 27th step: updated styling for in game/on screen instructions
+28th step: updated styling for on screen elements
