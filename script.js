@@ -6,7 +6,7 @@ let wrong = 0;
 let correct = 0;
 
 function makeWordCells() {
-  for (var i = 0; i < wordArray.length; i++) {
+  for (let i = 0; i < wordArray.length; i++) {
     $('.word-cells-main').append('<div class="word-letter ' + [i] + '"></div>');
   }
 }
@@ -47,7 +47,7 @@ function pushGuess() {
 function checkGuess() {
   let order = $.inArray(guess, wordArray);
   if (order >= 0) {
-    for (var i = 0; i < wordArray.length; i++) {
+    for (let i = 0; i < wordArray.length; i++) {
       if (guess === wordArray[i]) {
         $('.word-letter')
           .eq(i)
@@ -96,7 +96,7 @@ function showWrong() {
 }
 
 function timer() {
-  var sec = 180;
+  let sec = 180;
   setInterval(function() {
     sec--;
     function fmtMSS(s) {
