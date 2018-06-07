@@ -70,6 +70,24 @@ div {
     font-family: 'Open Sans', sans-serif;
 }
 
+.instructions {
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.one {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.three {
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
 .word {
     margin-top: 30px;
 }
@@ -133,5 +151,10 @@ footer {
     padding-top: 10px;
     margin-bottom: 25px;
     font-size: 16px;
-    letter-spacing: 1px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+strong {
+    font-size: 20px;
 }
