@@ -55,3 +55,4 @@ MVP COMPLETED
 28th step: updated styling for on screen elements
 29th step: changed all pxs to ems
 30th: corrected ems and changed script re: wordArray
+31st: added timer
