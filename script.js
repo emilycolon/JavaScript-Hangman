@@ -120,7 +120,7 @@ function showWrong() {
 
 function timer() {
   // found original countdown timer code here: https://stackoverflow.com/questions/7235816/how-to-create-a-countdown-timer-with-jquery
-  let sec = 180;
+  let sec = 120;
   setInterval(function() {
     sec--;
     // found solution to convert seconds to MM:SS here: https://stackoverflow.com/questions/3733227/javascript-seconds-to-minutes-and-seconds
