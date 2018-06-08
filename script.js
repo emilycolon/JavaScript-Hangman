@@ -96,9 +96,11 @@ function showWrong() {
 }
 
 function timer() {
+  // found original countdown timer code here: https://stackoverflow.com/questions/7235816/how-to-create-a-countdown-timer-with-jquery
   let sec = 180;
   setInterval(function() {
     sec--;
+    // found solution to convert seconds to MM:SS here: https://stackoverflow.com/questions/3733227/javascript-seconds-to-minutes-and-seconds
     function fmtMSS(s) {
       return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + s;
     }
@@ -184,6 +186,7 @@ $(document).ready(function() {
     }
   });
 
+  // found modal code here: https://www.w3schools.com/howto/howto_css_modals.asp
   $('#my-btn').on('click', function(evt) {
     $('#my-modal').css('display', 'block');
   });
