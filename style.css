@@ -169,6 +169,7 @@ input {
     margin: 0em 0.357em;
     font-size: 1.786em;
     font-weight: bold;
+    color: black;
     border-bottom: 0.125em solid black;
     vertical-align: bottom;
 }
@@ -180,6 +181,7 @@ input {
     margin: 0em 0.357em;
     font-size: 1.786em;
     font-weight: bold;
+    color: white;
     border-bottom: 0.125em solid white;
     vertical-align: bottom;
 }

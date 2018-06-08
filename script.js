@@ -62,7 +62,7 @@ function checkGuess() {
   if (order >= 0) {
     for (let i = 0; i < wordArray.length; i++) {
       if (guess === wordArray[i]) {
-        $('.word-letter')
+        $('.' + theme + '-word-letter')
           .eq(i)
           .text(wordArray[i]);
         correct++;
