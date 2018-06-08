@@ -119,16 +119,14 @@ function gameOver(x) {
       '<img src="images/you-lose.png" class="img-responsive" alt="hang man!">'
     );
     setTimeout(function() {
-      alert('You lose! Play again?');
-      location.reload();
+      $('#loss-modal').css('display', 'block');
     }, 1500);
   } else {
     $('.man').html(
       '<img src="images/you-win.png" class="img-responsive" alt="hang man!">'
     );
     setTimeout(function() {
-      alert('You win! Play again?');
-      location.reload();
+      $('#win-modal').css('display', 'block');
     }, 1500);
   }
 }
@@ -193,5 +191,10 @@ $(document).ready(function() {
 
   $('.close').on('click', function(evt) {
     $('#my-modal').css('display', 'none');
+  });
+
+  $('.game-over').on('click', function(evt) {
+    $('#my-modal').css('display', 'none');
+    location.reload();
   });
 });

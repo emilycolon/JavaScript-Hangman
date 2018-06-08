@@ -35,6 +35,8 @@ h1 {
     padding-right: 4em;
 }
 
+/*Modal styling taken from https://www.w3schools.com/howto/howto_css_modals.asp*/
+
 .modal {
     display: none;
     position: fixed;
@@ -58,14 +60,24 @@ h1 {
     font-size: 0.929em;
 }
 
-.close {
+.modal-content-game-over {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 1.429em;
+    border: 0.071em solid rgb(0, 0, 0);
+    width: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.929em;
+}
+
+.close, .game-over {
     color: #aaa;
     float: right;
     font-size: 2.000em;
     font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover, .close:focus, .game-over:hover, .game-over:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -218,6 +230,9 @@ strong {
         width: 100%;
         text-align: center;
     }
+    .modal-content-game-over {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -276,5 +291,8 @@ strong {
     }
     .input {
         margin-left: auto;
+    }
+    .modal-content-game-over {
+        width: 75%;
     }
 }
