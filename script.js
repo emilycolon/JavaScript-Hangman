@@ -234,5 +234,3 @@ $(document).ready(function() {
     location.reload();
   });
 });
-
-// testing testing
