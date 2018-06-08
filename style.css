@@ -1,9 +1,21 @@
-body {
+body, .paper {
     margin: 0 auto;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     font-size: 14px;
+    color: black;
     background-image: url(images/lined-paper-2.png);
+    background-color: rgb(233, 233, 233);
+}
+
+body, .chalk {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+    color: white;
+    background-image: url(images/concrete-wall-2.png);
+    background-color: rgb(36, 36, 36);
 }
 
 header {
@@ -25,6 +37,7 @@ h1 {
 .Timer {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
+    font-weight: bold;
     text-align: left;
     padding-left: 3em;
 }
@@ -149,7 +162,7 @@ input {
     text-align: center;
 }
 
-.word-letter {
+.paper-word-letter {
     width: 1.286em;
     text-align: center;
     display: inline-block;
@@ -157,6 +170,17 @@ input {
     font-size: 1.786em;
     font-weight: bold;
     border-bottom: 0.125em solid black;
+    vertical-align: bottom;
+}
+
+.chalk-word-letter {
+    width: 1.286em;
+    text-align: center;
+    display: inline-block;
+    margin: 0em 0.357em;
+    font-size: 1.786em;
+    font-weight: bold;
+    border-bottom: 0.125em solid white;
     vertical-align: bottom;
 }
 
@@ -190,11 +214,15 @@ input {
 }
 
 footer {
-    padding-top: 0.714em;
+    padding-top: 1em;
     margin-bottom: 1.786em;
     font-size: 1.143em;
     font-weight: bold;
     letter-spacing: 0.143em;
+}
+
+.themes {
+    display: inline-block;
 }
 
 strong {

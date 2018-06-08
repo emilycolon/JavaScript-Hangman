@@ -12,7 +12,10 @@
     <title>Hangman</title>
 </head>
 
-<body>
+
+<!-- will need to create script to change this class based on theme -->
+
+<body class="paper">
     <div class="container-fluid">
         <header>
             <div class="row">
@@ -34,7 +37,7 @@
 
         <div id="my-modal" class="modal">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header text-muted">
                     <h4>Instructions</h4>
                     <span class="close">&times;</span>
                 </div>
@@ -82,7 +85,7 @@
             <div class="row">
                 <div class="gallows six col-6">
                     <div class="man">
-                        <img src="images/empty-gallows.png" class="img-responsive" alt="hang man!">
+                        <img src="images/empty-gallowspaper.png" class="img-responsive" alt="hang man!">
                     </div>
                 </div>
 
@@ -112,6 +115,10 @@
 
         </main>
         <footer>
+            <p class="themes">
+                <button type="button" class="button btn button-submit button-paper btn-default">Paper Theme</button>
+                <button type="button" class="button btn button-submit button-chalk btn-default">Chalk Theme</button>
+            </p>
             <p>
                 <strong>©</strong> 2018 Emily Colón </p>
         </footer>

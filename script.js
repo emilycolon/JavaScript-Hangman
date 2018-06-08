@@ -4,10 +4,23 @@ let guess = '';
 let guessedLetters = [];
 let wrong = 0;
 let correct = 0;
+let theme = 'paper';
+
+function changeTheme(selection) {
+  theme = selection;
+  $('body').attr('class', theme);
+  $('.man').html(
+    '<img src="images/empty-gallows' +
+      theme +
+      '.png" class="img-responsive" alt="hang man!">'
+  );
+}
 
 function makeWordCells() {
   for (let i = 0; i < wordArray.length; i++) {
-    $('.word-cells-main').append('<div class="word-letter ' + [i] + '"></div>');
+    $('.word-cells-main').append(
+      '<div class="' + theme + '-word-letter ' + [i] + '"></div>'
+    );
   }
 }
 
@@ -67,27 +80,37 @@ function checkGuess() {
 function showWrong() {
   if (wrong === 1) {
     $('.man').html(
-      '<img src="images/head.png" class="img-responsive" alt="hang man!">'
+      '<img src="images/head' +
+        theme +
+        '.png" class="img-responsive" alt="hang man!">'
     );
     return;
   } else if (wrong === 2) {
     $('.man').html(
-      '<img src="images/body.png" class="img-responsive" alt="hang man!">'
+      '<img src="images/body' +
+        theme +
+        '.png" class="img-responsive" alt="hang man!">'
     );
     return;
   } else if (wrong === 3) {
     $('.man').html(
-      '<img src="images/left-arm.png" class="img-responsive" alt="hang man!">'
+      '<img src="images/left-arm' +
+        theme +
+        '.png" class="img-responsive" alt="hang man!">'
     );
     return;
   } else if (wrong === 4) {
     $('.man').html(
-      '<img src="images/right-arm.png" class="img-responsive" alt="hang man!">'
+      '<img src="images/right-arm' +
+        theme +
+        '.png" class="img-responsive" alt="hang man!">'
     );
     return;
   } else if (wrong === 5) {
     $('.man').html(
-      '<img src="images/left-leg.png" class="img-responsive" alt="hang man!">'
+      '<img src="images/left-leg' +
+        theme +
+        '.png" class="img-responsive" alt="hang man!">'
     );
     return;
   } else {
@@ -116,14 +139,18 @@ function timer() {
 function gameOver(x) {
   if (x === 'loss') {
     $('.man').html(
-      '<img src="images/you-lose.png" class="img-responsive" alt="hang man!">'
+      '<img src="images/you-lose' +
+        theme +
+        '.png" class="img-responsive" alt="hang man!">'
     );
     setTimeout(function() {
       $('#loss-modal').css('display', 'block');
     }, 1500);
   } else {
     $('.man').html(
-      '<img src="images/you-win.png" class="img-responsive" alt="hang man!">'
+      '<img src="images/you-win' +
+        theme +
+        '.png" class="img-responsive" alt="hang man!">'
     );
     setTimeout(function() {
       $('#win-modal').css('display', 'block');
@@ -157,6 +184,14 @@ $(document).ready(function() {
     }
   });
 
+  $('.button-paper').on('click', function(evt) {
+    changeTheme('paper');
+  });
+
+  $('.button-chalk').on('click', function(evt) {
+    changeTheme('chalk');
+  });
+
   $('.button-assigner').on('click', function(evt) {
     let word = $('.word')
       .val()
@@ -166,6 +201,7 @@ $(document).ready(function() {
       return;
     } else {
       $('.assigner').css('display', 'none');
+      $('.themes').css('display', 'none');
       $('.guesser').css('display', 'block');
       makeWordCells();
       timer();
